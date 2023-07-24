@@ -1,4 +1,5 @@
 const ParentEl = document.querySelector(".header");
+const dateEl = document.querySelector(".footer__year");
 
 let state = false;
 
@@ -11,3 +12,8 @@ const handleOpenMobileNav = e => {
 };
 
 ParentEl.addEventListener("click", handleOpenMobileNav);
+
+// year generation
+const date = new Date();
+const year = date.getFullYear();
+dateEl.innerHTML = year;
