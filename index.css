@@ -40,6 +40,11 @@ body {
 
 	background-color: var(--Black);
 }
+img {
+	height: auto;
+	width: 100%;
+}
+
 /* HEADER */
 .header {
 	position: relative;
@@ -72,6 +77,13 @@ body {
 
 	width: 100%;
 }
+.header__logo {
+	width: 30rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
 .header__menu > *:first-child {
 	margin-right: auto;
 }
